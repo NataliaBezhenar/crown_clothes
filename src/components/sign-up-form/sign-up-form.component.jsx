@@ -5,7 +5,7 @@ import {
 } from "../../utils/firebase/firebase.utils";
 import FormInput from "../form-input/form-input.component";
 import { SignUpContainer, SignUpTitle } from "./sign-up-form.styles";
-import Button from "../button/button.component";
+import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 const defaultFormFields = {
   displayName: "",
@@ -97,7 +97,7 @@ const SignUpForm = () => {
             value: confirmPassword,
           }}
         />
-        <Button type="submit" buttonType="inverted">
+        <Button type="submit" buttonType={BUTTON_TYPE_CLASSES.inverted}>
           Sign UP
         </Button>
       </form>

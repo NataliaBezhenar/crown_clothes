@@ -10,7 +10,6 @@ export const CategoriesProvider = ({ children }) => {
     // if to call async function in useEffect, need to wrap it into asinc function in the callback and then call created function
     const getCategoriesMap = async () => {
       const categoryMap = await getCategoriesAndDocuments();
-      console.log(categoryMap);
       setCategoriesMap(categoryMap);
     };
     getCategoriesMap();
