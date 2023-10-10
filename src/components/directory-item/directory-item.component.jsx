@@ -6,6 +6,7 @@ import {
 } from "./directory-item.styles";
 
 const DirectoryItem = ({ category }) => {
+  // !!!!!!! imageUrl problem here!!!!!
   const { imageUrl, title, route } = category;
   const navigate = useNavigate();
 
