@@ -10,33 +10,33 @@ export const CheckoutItemContainer = styled.div`
   align-items: center;
 `;
 
-export const CheckoutItemImageContainer = styled.div`
+export const ImageContainer = styled.div`
   width: 23%;
   padding-right: 15px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
-export const CheckoutItemImage = styled.img`
-  width: 100%;
-  height: 100%;
-`;
-
-export const CheckoutItemName = styled.span`
+export const BaseSpan = styled.span`
   width: 23%;
 `;
 
-export const CheckoutItemQuantity = styled.div`
-  width: 23%;
+export const Quantity = styled(BaseSpan)`
   display: flex;
 `;
 
-export const CheckoutItemArrow = styled.div`
+export const Arrow = styled.div`
   cursor: pointer;
 `;
 
-export const CheckoutItemPrice = styled.span`
-  width: 23%;
+export const Value = styled.span`
+  margin: 0 10px;
 `;
 
-export const CheckoutItemValue = styled.span`
-  margin: 0 10px;
+export const RemoveButton = styled.div`
+  padding-left: 12px;
+  cursor: pointer;
 `;

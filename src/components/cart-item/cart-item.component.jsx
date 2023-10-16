@@ -1,23 +1,18 @@
-import {
-  CartItemContainer,
-  CartItemDetails,
-  CartItemName,
-  ImageElement,
-} from "./cart-item.styles";
+import { CartItemContainer, ItemDetails } from "./cart-item.styles";
 
 const CartItem = ({ cartItem }) => {
-  const { name, quantity, imageUrl, price } = cartItem;
-
+  const { name, imageUrl, price, quantity } = cartItem;
   return (
     <CartItemContainer>
-      <ImageElement src={imageUrl} alt={`${name}`} />
-      <CartItemDetails>
-        <CartItemName>{name}</CartItemName>
+      <img src={imageUrl} alt={`${name}`} />
+      <ItemDetails>
+        <span>{name}</span>
         <span>
           {quantity} x ${price}
         </span>
-      </CartItemDetails>
+      </ItemDetails>
     </CartItemContainer>
   );
 };
+
 export default CartItem;
