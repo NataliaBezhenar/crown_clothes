@@ -9,7 +9,7 @@ import {
 import {
   selectCartItems,
   selectCartTotal,
-} from "../../store/cart/cart.selector.js";
+} from "../../store/cart/cart.selector";
 
 const Checkout = () => {
   const cartItems = useSelector(selectCartItems);
